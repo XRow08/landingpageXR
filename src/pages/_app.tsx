@@ -1,7 +1,11 @@
 import "@/styles/globals.css";
+import { useEffect } from 'react'
 import type { AppProps } from "next/app";
 import localFont from "next/font/local";
 import { Metadata } from "next/types";
+
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const microTecni = localFont({
   src: "../../public/fonts/microTecni.ttf",
@@ -37,6 +41,11 @@ export const metadata: Metadata = {
 };
 
 export default function App({ Component, pageProps }: AppProps) {
+
+  useEffect(() => {
+    Aos.init({ duration: 1500 })
+  }, [])
+
   return (
     <main
       className={`${microTecni.variable} ${helvetica.variable} scroll-smooth`}
