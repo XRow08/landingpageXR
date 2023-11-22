@@ -16,6 +16,7 @@ module.exports = {
         'mobileHeader': "url('/mobileAssets/headerMobile.png')",
         'page': "url('/images/backgroundPage.png')",
         'murilao': "url('/images/murilao.webp')",
+        'murilaoMobile': "url('/mobileAssets/murilaoMobile.png')",
         'services': "url('/images/servicos.png')",
         'benefits': "url('/images/diferenciais.png')",
         'brands': "url('/images/empresas.png')",

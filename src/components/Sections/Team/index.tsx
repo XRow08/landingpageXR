@@ -1,8 +1,24 @@
+import { useEffect, useState } from "react";
 import Button from "../../Button";
 
 export default function Team() {
+
+    const [isLargeScreen, setIsLargeScreen] = useState(false);
+
+    useEffect(() => {
+        const checkScreenSize = () => {
+            setIsLargeScreen(window.innerWidth >= 1024);
+        };
+
+        checkScreenSize();
+        window.addEventListener('resize', checkScreenSize);
+
+        return () => window.removeEventListener('resize', checkScreenSize);
+    }, []);
+
+
     return (
-        <div className="lg:h-[1120px] lg:bg-murilao bg-cover bg-center flex items-center lg:px-40">
+        <div className="lg:h-[1120px] lg:bg-murilao bg-cover bg-center lg:flex items-center px-4 pt-32 lg:px-40">
             <div className="lg:w-[788px] lg:h-[511]">
                 <h1 className="text-white font-microTecni lg:text-[28px] mb-4">Murillo Augusto</h1>
                 <p className="font-helvetica text-xl text-white/80">
@@ -22,6 +38,13 @@ export default function Team() {
                     <Button />
                 </div>
             </div>
+            {isLargeScreen ? (
+                null
+            ) : (
+                <div>
+                    <img src="/mobileAssets/murilaoMobile.png" className="w-[360px] h-[408px]" />
+                </div>
+            )}
         </div>
     )
 }

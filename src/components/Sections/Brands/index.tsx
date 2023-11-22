@@ -17,7 +17,7 @@ export default function Brands() {
     }, []);
 
     return (
-        <div className="h-[216px] lg:h-[202px] lg:px-40 py-6 lg:bg-brands bg-cover bg-center">
+        <div className="h-[216px] lg:h-[202px] lg:px-40 py-16 lg:bg-brands bg-cover bg-center">
             <div className="text-white lg:text-[24px] text-xl font-microTecni text-center">
                 ALGUMAS GRANDES EMPRESAS QUE UTILIZAM O SITE <span className="text-red">10x</span>
             </div>
