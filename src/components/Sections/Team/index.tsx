@@ -2,9 +2,9 @@ import Button from "../../Button";
 
 export default function Team() {
     return (
-        <div className="h-[1120px] bg-murilao bg-cover bg-cnter flex items-center px-40">
-            <div className="w-[788px] h-[511]">
-                <h1 className="text-white font-microTecni text-[28px] mb-4">Murillo Augusto</h1>
+        <div className="lg:h-[1120px] lg:bg-murilao bg-cover bg-center flex items-center lg:px-40">
+            <div className="lg:w-[788px] lg:h-[511]">
+                <h1 className="text-white font-microTecni lg:text-[28px] mb-4">Murillo Augusto</h1>
                 <p className="font-helvetica text-xl text-white/80">
                     Murillo Augusto é programador Full Stack e especialista no desenvolvimento de sites de alta performance.
                 </p>
@@ -18,7 +18,7 @@ export default function Team() {
                     Senioridade <br />
                     <span className="font-helvetica font-bold text-[32px] text-white">Dev Sênior</span>
                 </p>
-                <div className="mt-[72px]">
+                <div className="mt-[72px] flex justify-center">
                     <Button />
                 </div>
             </div>

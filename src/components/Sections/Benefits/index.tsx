@@ -2,12 +2,12 @@ import Button from "@/components/Button"
 
 export default function Benefits() {
     return (
-        <div className="h-[987px] py-24 px-40 font-microTecni">
-            <h1 className="text-white text-center text-2xl">
+        <div className=" h-[1611px] px-4 lg:h-[987px] lg:py-24 lg:px-40 font-microTecni lg:bg-benefits bg-cover bg-center">
+            <h1 className="text-white text-center lg:text-2xl text-xl">
                 QUAL A DIFERENÇA DO <span className="text-red">SITE 10X</span> <br /> PARA UM SITE COMUM?
             </h1>
-            <div data-aos="fade-up" className="flex justify-center mt-9">
-                <div className="card-benefits-card w-[665px] h-[402px] rounded-tl-2xl rounded-bl-2xl pt-6 pr-6 pb-9 pl-9">
+            <div className="lg:flex justify-center mt-9">
+                <div className="card-benefits-card lg:w-[665px] lg:h-[402px] border-white/30 border-2 rounded-tl-2xl rounded-tr-2xl lg:rounded-bl-2xl  pt-6 pr-6 pb-9 pl-9">
                     <h1 className="text-green font-helvetica font-bold text-[28px]">Site 10X</h1>
                     <div className="border w-full border-white/30 my-4"></div>
 
@@ -38,7 +38,7 @@ export default function Benefits() {
                         </li>
                     </ul>
                 </div>
-                <div className="card-benefits-card w-[665px] h-[402px] rounded-tr-2xl rounded-br-2xl pt-6 pr-6 pb-9 pl-9">
+                <div className="card-benefits-card border-white/30 border-2 lg:w-[665px] lg:h-[402px] lg:rounded-tr-2xl rounded-br-2xl rounded-bl-2xl pt-6 pr-6 pb-9 pl-9">
                     <h1 className="text-white font-helvetica font-bold text-[28px]">Site Comum</h1>
                     <div className="border w-full border-white/30 my-4"></div>
                     <ul className="flex flex-col gap-5">
@@ -70,11 +70,11 @@ export default function Benefits() {
                 </div>
             </div>
             <div className="flex flex-col items-center mt-6">
-                <div className="text-white/80 font-helvetica text-[22px]">
+                <div className="text-white/80 font-helvetica text-[22px] text-center">
                     Enquanto a maioria dos sites comuns são construídos de maneira genérica, através de plataformas “pré montadas”...
                 </div>
 
-                <div className="text-white/80 font-helvetica text-[22px] my-4">
+                <div className="text-white/80 text-center font-helvetica text-[22px] my-4">
                     O <span className="text-red">“Site 10X”</span> é desenvolvido 100% de forma manual
                 </div>
 

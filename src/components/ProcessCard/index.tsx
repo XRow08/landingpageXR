@@ -7,7 +7,7 @@ type ProcessCardProps = {
 
 export default function ProcessCard({ title, text, cardNumber, mirroring }: ProcessCardProps) {
     return (
-        <div className="w-[548px] h-[284px] card-gradient rounded-xl flex flex-col justify-between">
+        <div className="lg:w-[548px] lg:h-[284px] card-gradient rounded-xl flex flex-col justify-between">
             <div className="px-6 pt-6">
                 <h1 className="font-helvetica font-bold text-[22px] text-white">{title}</h1>
                 <p className="mt-2 font-helvetica text-lg text-white/80">

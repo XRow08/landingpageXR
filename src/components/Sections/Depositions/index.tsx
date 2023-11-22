@@ -1,5 +1,5 @@
 import { CSSProperties } from 'react';
-import { Carousel, } from 'react-responsive-carousel';
+import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 type ArrowsProps = {
@@ -54,7 +54,7 @@ export default function Depositions() {
     );
 
     return (
-        <div className="h-[816px] pt-24 pb-72 flex flex-col">
+        <div className="h-[816px] pt-24 pb-72 flex flex-col bg-depositions bg-cover bg-center">
             <Carousel
                 showStatus={false}
                 showIndicators={false}
@@ -69,7 +69,7 @@ export default function Depositions() {
                     <NextArrow onClickHandler={onClickHandler} hasNext={hasNext} label={label} />
                 }
             >
-                <div data-aos="fade-right" className=" h-[374px] w-[836px] card-gradient rounded-2xl pt-6 pb-[54px] px-6 flex flex-col justify-between">
+                <div className=" h-[374px] w-[836px] card-gradient rounded-2xl pt-6 pb-[54px] px-6 flex flex-col justify-between">
                     <div className="font-helvetica text-white text-left text-[22px]">
                         Murilo me atendeu super bem, adorei o atendimento e o resultado do meu produto. Foi pontual, didático, entregou seus serviços de acordo com o contrato e pode apostar que contatarei mais vezes!!
                     </div>
@@ -78,7 +78,7 @@ export default function Depositions() {
                         <div><img src="/images/stars.svg" alt="stars" /></div>
                     </div>
                 </div>
-                <div data-aos="fade-up" className=" h-[374px] w-[836px] card-gradient rounded-2xl pt-6 pb-[54px] px-6 flex flex-col justify-between">
+                <div className=" h-[374px] w-[836px] card-gradient rounded-2xl pt-6 pb-[54px] px-6 flex flex-col justify-between">
                     <div className="font-helvetica text-white text-left text-[22px]">
                         Murilo me atendeu super bem, adorei o atendimento e o resultado do meu produto. Foi pontual, didático, entregou seus serviços de acordo com o contrato e pode apostar que contatarei mais vezes!!
                     </div>
@@ -87,7 +87,7 @@ export default function Depositions() {
                         <div><img src="/images/stars.svg" alt="stars" /></div>
                     </div>
                 </div>
-                <div data-aos="fade-left" className=" h-[374px] w-[836px] card-gradient rounded-2xl pt-6 pb-[54px] px-6 flex flex-col justify-between">
+                <div className=" h-[374px] w-[836px] card-gradient rounded-2xl pt-6 pb-[54px] px-6 flex flex-col justify-between">
                     <div className="font-helvetica text-white text-left text-[22px]">
                         Murilo me atendeu super bem, adorei o atendimento e o resultado do meu produto. Foi pontual, didático, entregou seus serviços de acordo com o contrato e pode apostar que contatarei mais vezes!!
                     </div>
