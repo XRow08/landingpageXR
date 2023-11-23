@@ -1,20 +1,10 @@
-import { useState, useEffect } from 'react'
+import useIsLargeScreen from '@/hooks/isLargeScreen';
+
 import { Carousel } from 'react-responsive-carousel';
 
 export default function Brands() {
 
-    const [isLargeScreen, setIsLargeScreen] = useState(false);
-
-    useEffect(() => {
-        const checkScreenSize = () => {
-            setIsLargeScreen(window.innerWidth >= 1024);
-        };
-
-        checkScreenSize();
-        window.addEventListener('resize', checkScreenSize);
-
-        return () => window.removeEventListener('resize', checkScreenSize);
-    }, []);
+    const isLargeScreen = useIsLargeScreen()
 
     return (
         <div className="h-[216px] lg:h-[202px] lg:px-40 py-16 lg:bg-brands bg-cover bg-center">

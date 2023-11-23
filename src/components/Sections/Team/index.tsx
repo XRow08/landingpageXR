@@ -1,21 +1,10 @@
-import { useEffect, useState } from "react";
+import useIsLargeScreen from "@/hooks/isLargeScreen";
+
 import Button from "../../Button";
 
 export default function Team() {
 
-    const [isLargeScreen, setIsLargeScreen] = useState(false);
-
-    useEffect(() => {
-        const checkScreenSize = () => {
-            setIsLargeScreen(window.innerWidth >= 1024);
-        };
-
-        checkScreenSize();
-        window.addEventListener('resize', checkScreenSize);
-
-        return () => window.removeEventListener('resize', checkScreenSize);
-    }, []);
-
+    const isLargeScreen = useIsLargeScreen()
 
     return (
         <div className="lg:h-[1120px] lg:bg-murilao bg-cover bg-center lg:flex items-center px-4 pt-32 lg:px-40">

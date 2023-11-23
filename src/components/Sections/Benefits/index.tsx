@@ -2,7 +2,7 @@ import Button from "@/components/Button"
 
 export default function Benefits() {
     return (
-        <div className="  px-4 lg:h-[987px] lg:py-24 lg:px-40 font-microTecni lg:bg-benefits bg-cover bg-center">
+        <div className="px-4 lg:h-[987px] lg:py-24 lg:px-40 font-microTecni lg:bg-benefits h bg-cover bg-center">
             <h1 className="text-white text-center lg:text-2xl text-xl">
                 QUAL A DIFERENÇA DO <span className="text-red">SITE 10X</span> <br /> PARA UM SITE COMUM?
             </h1>

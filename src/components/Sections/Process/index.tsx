@@ -1,22 +1,11 @@
+import useIsLargeScreen from "@/hooks/isLargeScreen";
+
 import Button from "@/components/Button"
 import ProcessCard from "@/components/ProcessCard"
-import { useEffect, useState } from "react";
 
 export default function Process() {
 
-    const [isLargeScreen, setIsLargeScreen] = useState(false);
-
-    useEffect(() => {
-        const checkScreenSize = () => {
-            setIsLargeScreen(window.innerWidth >= 1024);
-        };
-
-        checkScreenSize();
-        window.addEventListener('resize', checkScreenSize);
-
-        return () => window.removeEventListener('resize', checkScreenSize);
-    }, []);
-
+    const isLargeScreen = useIsLargeScreen()
 
     return (
         <div className="lg:h-[1020px] px-4 flex flex-col justify-center items-center lg:bg-process bg-black bg-cover bg-center">

@@ -2,11 +2,11 @@ import Button from "@/components/Button"
 
 export default function Header() {
     return (
-        <header className="bg-mobileHeader bg-cover bg-center w-full lg:h-screen lg:bg-header lg:pt-44 lg:pl-40 px-4 pt-20 h-[1011px]">
-            <div className="lg:w-[812px] lg:h-[493px] flex flex-col">
+        <header className="bg-mobileHeader md:bg-headerMedium bg-cover bg-center w-full lg:h-screen lg:bg-header lg:pt-44 lg:pl-40 px-4 pt-20 h-[1011px]">
+            <div className="md:w-[547px] md:h-[250px] lg:w-[812px] lg:h-[493px] flex flex-col">
                 <div>
                     <img src="/images/logo.svg" className="mb-5" />
-                    <p className="text-white font-microTecni lg:text-4xl lg:mt-[46px] mb-5 text-xl">
+                    <p className="text-white font-microTecni md:text-2xl lg:mt-[46px] mb-5 text-xl">
                         AUMENTE O
                         <span className="text-red"> FATURAMENTO </span>
                         DA SUA EMPRESA E ATRAIA MAIS CLIENTES ATRAVÉS DO
