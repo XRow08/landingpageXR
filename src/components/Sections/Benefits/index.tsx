@@ -7,7 +7,7 @@ export default function Benefits() {
                 QUAL A DIFERENÇA DO <span className="text-red">SITE 10X</span> <br /> PARA UM SITE COMUM?
             </h1>
             <div className="lg:flex justify-center mt-9">
-                <div className="card-benefits-card lg:w-[665px] lg:h-[402px] border-white/30 border-2 rounded-tl-2xl rounded-tr-2xl lg:rounded-bl-2xl  pt-6 pr-6 pb-9 pl-9">
+                <div className="card-benefits-card lg:w-[665px] lg:h-[402px] border-white/30 border-2 xl:border-r-0 rounded-tl-2xl rounded-tr-2xl xl:rounded-none xl:rounded-tl-2xl xl:rounded-bl-2xl lg:rounded-bl-2xl  pt-6 pr-6 pb-9 pl-9">
                     <h1 className="text-green font-helvetica font-bold text-[28px]">Site 10X</h1>
                     <div className="border w-full border-white/30 my-4"></div>
 
@@ -38,7 +38,10 @@ export default function Benefits() {
                         </li>
                     </ul>
                 </div>
-                <div className="card-benefits-card border-white/30 border-2 lg:w-[665px] lg:h-[402px] lg:rounded-tr-2xl rounded-br-2xl rounded-bl-2xl pt-6 pr-6 pb-9 pl-9">
+
+                <div className="hidden xl:block w-0 border border-white/20 xl:mt-11 xl:mb-11 absolute h-80"></div>
+
+                <div className="card-benefits-card border-white/30 xl:border-l-0 border-l-2 border-b-2 border-r-2 xl:border-t-2 lg:w-[665px] lg:h-[402px] lg:rounded-tr-2xl xl:rounded-bl-none rounded-br-2xl rounded-bl-2xl pt-6 pr-6 pb-9 pl-9">
                     <h1 className="text-white font-helvetica font-bold text-[28px]">Site Comum</h1>
                     <div className="border w-full border-white/30 my-4"></div>
                     <ul className="flex flex-col gap-5">

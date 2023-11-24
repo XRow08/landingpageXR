@@ -31,12 +31,14 @@ export default function Process() {
                             title="CONSTRUÇÃO"
                             text="Nosso time gráfico realizará a construção de toda a parte visual do website, focando 100% na navegabilidade e experiência do usuário"
                             cardNumber="2"
+                            mirroring={isLargeScreen ? true : false}
 
                         />
                         <ProcessCard
                             title="IMPLEMENTAÇÃO"
                             text="Depois de aprovado, faremos a implementação do seu site na internet. Com algumas das técnicas mais avançadas, aumentaremos a performance e a visibilidade do seu site. Deixaremos seu carregamento no maior potencial possível e otimizarmos a navegabilidade dos usuários"
                             cardNumber="4"
+                            mirroring={isLargeScreen ? true : false}
 
                         />
                     </div>

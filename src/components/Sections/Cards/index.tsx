@@ -18,7 +18,7 @@ export default function Cards() {
 
             {isLargeScreen ? (
                 <div className="lg:px-40">
-                    <div className="lg:flex flex-row justify-between">
+                    <div className="xl:gap-6 xl:flex flex-row justify-between">
                         <Card
                             text="Levar clientes altamente qualificados para o seu negócio"
                             icon='/images/cardIcon1.svg'
@@ -32,7 +32,7 @@ export default function Cards() {
                             icon='/images/cardIcon3.svg'
                         />
                     </div>
-                    <div className="flex flex-row justify-between mt-10">
+                    <div className="xl:gap-6 xl:flex flex-row justify-between mt-10">
                         <Card
                             text="Abrir as portas da sua empresa para novas oportunidades de crescimento"
                             icon='/images/cardIcon4.svg'

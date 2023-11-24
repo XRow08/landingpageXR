@@ -3,7 +3,7 @@ import { Carousel, CarouselProps } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 type AppCarouselProps = {
-    children: ReactNode;
+    children: any;
 }
 
 type ArrowsProps = {
@@ -34,7 +34,7 @@ export default function AppCarousel({ children }: AppCarouselProps) {
                 type="button"
                 onClick={onClickHandler}
                 title={label}
-                className='w-10 h-10 absolute left-20 right-0 bottom-0'
+                className='w-10 h-10 absolute left-20 right-0 bottom-0 xl:bottom-44 xl:left-44 xl:z-10'
             >
 
                 <div className='-rotate-180 hover:opacity-50'>
@@ -50,7 +50,7 @@ export default function AppCarousel({ children }: AppCarouselProps) {
                 type="button"
                 onClick={onClickHandler}
                 title={label}
-                className='w-10 h-10 ml-48 mt-2'
+                className='w-10 h-10 ml-48 mt-2 xl:absolute xl:bottom-44 xl:right-[310px] xl:z-10'
             >
 
                 <div className='hover:opacity-50'>
@@ -66,7 +66,7 @@ export default function AppCarousel({ children }: AppCarouselProps) {
             showStatus={false}
             showIndicators={false}
             centerMode={!isMobile}
-            centerSlidePercentage={50}
+            centerSlidePercentage={isMobile ? 50 : 65}
             emulateTouch={true}
             selectedItem={isMobile ? 0 : 1}
             infiniteLoop={true}

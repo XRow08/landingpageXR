@@ -12,15 +12,15 @@ export default function Brands() {
                 ALGUMAS GRANDES EMPRESAS QUE UTILIZAM O SITE <span className="text-red">10x</span>
             </div>
             {isLargeScreen ? (
-                <div className="flex justify-between mt-12">
-                    <img src="/images/ifood.svg" />
-                    <img src="/images/coke.svg" />
-                    <img src="/images/nike.svg" />
-                    <img src="/images/spotify.svg" />
-                    <img src="/images/chevrolet.svg" />
-                    <img src="/images/apple.svg" />
-                    <img src="/images/smartfit.svg" />
-                    <img src="/images/johnsons.svg" />
+                <div className="flex justify-between">
+                    <img className='xl:w-28' src="/images/ifood.svg" />
+                    <img className='xl:w-28' src="/images/coke.svg" />
+                    <img className='xl:w-28' src="/images/nike.svg" />
+                    <img className='xl:w-28' src="/images/spotify.svg" />
+                    <img className='xl:w-28' src="/images/chevrolet.svg" />
+                    <img className='xl:w-20' src="/images/apple.svg" />
+                    <img className='xl:w-28' src="/images/smartfit.svg" />
+                    <img className='xl:w-28' src="/images/johnsons.svg" />
                 </div>
             ) : (
 

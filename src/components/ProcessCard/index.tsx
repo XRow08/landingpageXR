@@ -2,7 +2,7 @@ type ProcessCardProps = {
     title: string;
     text: string;
     cardNumber: string;
-    mirroring?: true;
+    mirroring?: boolean;
 }
 
 export default function ProcessCard({ title, text, cardNumber, mirroring }: ProcessCardProps) {
@@ -15,7 +15,7 @@ export default function ProcessCard({ title, text, cardNumber, mirroring }: Proc
                 </p>
             </div>
             <div className={`flex justify-end ${mirroring ? 'lg:justify-start' : 'lg:justify-end'}`}>
-                <span className={`w-10 h-10 bg-red flex justify-center items-center font-microTecni text-white ${mirroring ? 'rounded-tr-2xl rounded-bl-2xl' : 'rounded-tl-2xl rounded-br-2xl'}`}>
+                <span className={`w-10 h-10 bg-button flex justify-center items-center font-microTecni text-white ${mirroring ? 'rounded-tr-2xl rounded-bl-2xl' : 'rounded-tl-2xl rounded-br-2xl'}`}>
                     {cardNumber}
                 </span>
             </div>
