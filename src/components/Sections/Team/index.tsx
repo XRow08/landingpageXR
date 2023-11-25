@@ -7,9 +7,9 @@ export default function Team() {
     const isLargeScreen = useIsLargeScreen()
 
     return (
-        <div className="lg:h-[1120px] lg:bg-murilao bg-cover bg-center lg:flex items-center px-4 pt-32 lg:px-40">
-            <div className="lg:w-[788px] lg:h-[511] xl:w-[548px]">
-                <h1 className="text-white font-microTecni lg:text-[28px] mb-4">Murillo Augusto</h1>
+        <div className=" lg:bg-murilao bg-cover bg-center lg:flex items-center px-4 pt-32 2xl:py-80 lg:px-40">
+            <div className="2xl:w-[788px] xl:w-[548px]">
+                <h1 className="text-white font-microTecni lg:text-[28px] 2xl:text-2xl mb-4">Murillo Augusto</h1>
                 <p className="font-helvetica text-xl text-white/80">
                     Murillo Augusto é programador Full Stack e especialista no desenvolvimento de sites de alta performance.
                 </p>

@@ -7,20 +7,20 @@ export default function Brands() {
     const isLargeScreen = useIsLargeScreen()
 
     return (
-        <div className="h-[216px] lg:h-[202px] lg:px-40 py-16 lg:bg-brands bg-cover bg-center">
-            <div className="text-white lg:text-[24px] text-xl font-microTecni text-center">
+        <div className="h-[216px] 2xl:h-full bg-black lg:px-40 a 2xl:py-6 2xl:px-40 2xl:bg-brands bg-cover bg-center ">
+            <div className="text-white lg:text-[24px] text-xl font-microTecni text-center 2xl:pb-10">
                 ALGUMAS GRANDES EMPRESAS QUE UTILIZAM O SITE <span className="text-red">10x</span>
             </div>
             {isLargeScreen ? (
                 <div className="flex justify-between">
-                    <img className='xl:w-28' src="/images/ifood.svg" />
-                    <img className='xl:w-28' src="/images/coke.svg" />
-                    <img className='xl:w-28' src="/images/nike.svg" />
-                    <img className='xl:w-28' src="/images/spotify.svg" />
-                    <img className='xl:w-28' src="/images/chevrolet.svg" />
+                    <img className='xl:w-28 2xl:w-48' src="/images/ifood.svg" />
+                    <img className='xl:w-28 2xl:w-48' src="/images/coke.svg" />
+                    <img className='xl:w-28 2xl:w-48' src="/images/nike.svg" />
+                    <img className='xl:w-28 2xl:w-48' src="/images/spotify.svg" />
+                    <img className='xl:w-28 2xl:w-48' src="/images/chevrolet.svg" />
                     <img className='xl:w-20' src="/images/apple.svg" />
-                    <img className='xl:w-28' src="/images/smartfit.svg" />
-                    <img className='xl:w-28' src="/images/johnsons.svg" />
+                    <img className='xl:w-28 2xl:w-48' src="/images/smartfit.svg" />
+                    <img className='xl:w-28 2xl:w-48' src="/images/johnsons.svg" />
                 </div>
             ) : (
 

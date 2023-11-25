@@ -10,7 +10,6 @@ export default function Home() {
   return (
     <main>
       <Header />
-
       <section className="bg-black">
         <Cards />
         <Benefits />

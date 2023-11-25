@@ -58,7 +58,7 @@ export default function AppCarousel({ children }: AppCarouselProps) {
                 </div>
             </button>
         )
-    );
+    )
 
     return (
 

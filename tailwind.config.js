@@ -18,6 +18,7 @@ module.exports = {
         'murilao': "url('/images/murilao.webp')",
         'murilaoMobile': "url('/mobileAssets/murilaoMobile.png')",
         'services': "url('/images/servicos.png')",
+        'servicesMedium': "url('/images/servicesMedium.png')",
         'benefits': "url('/images/diferenciais.png')",
         'brands': "url('/images/empresas.png')",
         'depositions': "url('/images/depoimentos.png')",

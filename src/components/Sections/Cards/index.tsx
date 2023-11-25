@@ -9,7 +9,7 @@ export default function Cards() {
     const isLargeScreen = useIsLargeScreen()
 
     return (
-        <div className="lg:h-[974px] lg:py-24 py-8 px-4 lg:bg-services bg-cover bg-center bg-black">
+        <div className="bg-black">
             <div>
                 <h1 className="text-white font-microTecni lg:text-[28px] text-center lg:mb-10 mb-10">
                     O QUE UM <span className="text-red">SITE 10X</span> PODE FAZER POR VOCÊ?
@@ -48,7 +48,7 @@ export default function Cards() {
                     </div>
                 </div>
             ) : (
-                <div >
+                <div className='p-4'>
                     <AppCarousel>
                         <Card
                             text="Levar clientes altamente qualificados para o seu negócio"
