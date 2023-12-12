@@ -7,8 +7,8 @@ export default function Brands() {
     const isLargeScreen = useIsLargeScreen()
 
     return (
-        <div className="h-[216px] 2xl:h-full bg-black lg:px-40 a 2xl:py-6 2xl:px-40 2xl:bg-brands bg-cover bg-center ">
-            <div className="text-white lg:text-[24px] text-xl font-microTecni text-center 2xl:pb-10">
+        <div className="h-[216px] 2xl:h-full bg-black lg:px-40 lg:py-6 a 2xl:py-6 2xl:px-40 2xl:bg-brands bg-cover bg-center">
+            <div className="text-white lg:text-[24px] text-xl font-microTecni text-center 2xl:pb-10 lg:mb-12">
                 ALGUMAS GRANDES EMPRESAS QUE UTILIZAM O SITE <span className="text-red">10x</span>
             </div>
             {isLargeScreen ? (

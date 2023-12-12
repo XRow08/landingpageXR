@@ -34,6 +34,11 @@ module.exports = {
         'green': '#09FF12',
         'button': '#AC0000',
       },
+      extend: {
+        boxShadow: {
+          'neon': '0 0 5px #ff0000, 0 0 15px #ff0000, 0 0 30px #ff0000, 0 0 60px #ff0000'
+        }
+      }
     },
   },
   plugins: [],

@@ -4,6 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 type AppCarouselProps = {
     children: any;
+    centerSlidePercentage?: number;
 }
 
 type ArrowsProps = {
@@ -13,20 +14,7 @@ type ArrowsProps = {
     label?: string;
 }
 
-export default function AppCarousel({ children }: AppCarouselProps) {
-
-    const [isMobile, setIsMobile] = useState(false);
-
-    useEffect(() => {
-        const checkIfMobile = () => {
-            setIsMobile(window.innerWidth < 768)
-        };
-
-        checkIfMobile();
-        window.addEventListener('resize', checkIfMobile);
-
-        return () => window.removeEventListener('resize', checkIfMobile);
-    }, []);
+export default function AppCarousel({ children, centerSlidePercentage }: AppCarouselProps) {
 
     const PrevArrow = ({ onClickHandler, hasPrev, label }: ArrowsProps) => (
         hasPrev && (
@@ -34,7 +22,7 @@ export default function AppCarousel({ children }: AppCarouselProps) {
                 type="button"
                 onClick={onClickHandler}
                 title={label}
-                className='w-10 h-10 absolute left-20 right-0 bottom-0 xl:bottom-44 xl:left-44 xl:z-10'
+                className='w-10 h-10 absolute left-20 right-0 bottom-0 xl:bottom-44 xl:left-96 xl:z-10'
             >
 
                 <div className='-rotate-180 hover:opacity-50'>
@@ -50,7 +38,7 @@ export default function AppCarousel({ children }: AppCarouselProps) {
                 type="button"
                 onClick={onClickHandler}
                 title={label}
-                className='w-10 h-10 ml-48 mt-2 xl:absolute xl:bottom-44 xl:right-[310px] xl:z-10'
+                className='w-10 h-10 ml-48 mt-2 xl:absolute xl:bottom-44 xl:right-[500px] xl:z-10'
             >
 
                 <div className='hover:opacity-50'>
@@ -61,24 +49,25 @@ export default function AppCarousel({ children }: AppCarouselProps) {
     )
 
     return (
+        <div>
+            <Carousel
+                showStatus={false}
+                showIndicators={false}
+                centerMode={true}
+                centerSlidePercentage={centerSlidePercentage}
+                emulateTouch={true}
+                selectedItem={1}
+                infiniteLoop={true}
+                renderArrowPrev={(onClickHandler, hasPrev, label) =>
+                    <PrevArrow onClickHandler={onClickHandler} hasPrev={hasPrev} label={label} />
+                }
+                renderArrowNext={(onClickHandler, hasNext, label) =>
+                    <NextArrow onClickHandler={onClickHandler} hasNext={hasNext} label={label} />
+                }
+            >
+                {children}
 
-        <Carousel
-            showStatus={false}
-            showIndicators={false}
-            centerMode={!isMobile}
-            centerSlidePercentage={isMobile ? 50 : 65}
-            emulateTouch={true}
-            selectedItem={isMobile ? 0 : 1}
-            infiniteLoop={true}
-            renderArrowPrev={(onClickHandler, hasPrev, label) =>
-                <PrevArrow onClickHandler={onClickHandler} hasPrev={hasPrev} label={label} />
-            }
-            renderArrowNext={(onClickHandler, hasNext, label) =>
-                <NextArrow onClickHandler={onClickHandler} hasNext={hasNext} label={label} />
-            }
-        >
-            {children}
-
-        </Carousel>
+            </Carousel>
+        </div>
     )
 }

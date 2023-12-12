@@ -9,7 +9,7 @@ export default function Cards() {
     const isLargeScreen = useIsLargeScreen()
 
     return (
-        <div className="bg-black">
+        <div className="lg:bg-services bg-cover bg-center py-24">
             <div>
                 <h1 className="text-white font-microTecni lg:text-[28px] text-center lg:mb-10 mb-10">
                     O QUE UM <span className="text-red">SITE 10X</span> PODE FAZER POR VOCÊ?
@@ -77,7 +77,7 @@ export default function Cards() {
                     </AppCarousel>
                 </div>
             )}
-            <div className="mt-14 flex justify-center">
+            <div className="flex justify-center lg:mt-16">
                 <Button />
             </div>
         </div>

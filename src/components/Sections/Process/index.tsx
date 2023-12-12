@@ -8,7 +8,7 @@ export default function Process() {
     const isLargeScreen = useIsLargeScreen()
 
     return (
-        <div className="lg:h-[1020px] px-4 flex flex-col justify-center items-center lg:bg-process bg-black bg-cover bg-center">
+        <div className="lg:h-[1020px] px-4 flex flex-col justify-center items-center lg:bg-process bg-process bg-cover bg-center">
             <h1 className="font-microTecni lg:text-[28px] text-lg text-center text-white">
                 COMO É O PROCESSO DE CRIAÇÃO DE UM <span className="text-red">SITE 10X</span>
             </h1>
